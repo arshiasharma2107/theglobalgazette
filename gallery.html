@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Global Gazette</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0c0101;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://thumbs.dreamstime.com/b/old-crumpled-newspaper-texture-background-grunge-recycled-paper-blurred-vintage-horizontal-textured-page-gray-white-news-125505997.jpg");
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: last baseline;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .gallery-heading::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            grid-gap: 30px;
+            justify-items: left; 
+        }
+        .gallery-item {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            text-align: center; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">The Global Gazette</div>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="gallery.html">Gallery</a> 
+        
+            </nav>
+        </div>
+    </header>
+<hr>
+    <div class="gallery-heading">
+        <center><h1>Gallery</h1></center>
+    </div>
+    <hr>
+
+    <div class="container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2024-05/4d4mbe_earth_625x300_22_May_24.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400" alt="news1">
+                <p>Groundbreaking New Study Finds Life On Earth Emerged 4.2 Billion Years Ago.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2022-12/0htt5beg_india-police-generic_625x300_23_December_22.jpg?im=FaceCrop,algorithm=dnn,width=650,height=400" alt="news2">
+                <p>House Help Stuck In Lift Dies After Falling From 3rd Floor During Rescue Operation In Kota: Cops</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2024-07/qrhvq5mo_pakistan-breast-milk-bank-facebook_625x300_12_July_24.jpeg" alt="news3">
+                <p>Pakistan's First Breast Milk Bank Shuts After Clerics Deem It "Un-Islamic"</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2024-05/gecl6v2s_pv-sindhu-ani_640x480_26_May_24.jpg?im=FitAndFill,algorithm=dnn,width=806,height=605" alt="news4">
+                <p>Paris Olympics: PV Sindhu, HS Prannoy Get Easy Groups; Tough Task For Lakshya Sen, Tanisha Crasto-Ashwini Ponnappa</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2019-06/kh9h97to_delhi-university-of-delhi-du_625x300_27_June_19.jpg?im=FaceCrop,algorithm=dnn,width=773,height=435" alt="news5">
+                <p>Proposal To Introduce Manusmriti For LLB Students Not Found Appropriate: Delhi University Vice-Chancellor</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://static.toiimg.com/thumb/imgsize-23456,msid-111693576,width-600,resizemode-4/111693576.jpg" alt="news6">
+                <p>Mahayuti alliance of BJP, Shiv Sena & NCP won all nine seats it contested in the Maharashtra legislative council elections polls that took place on Friday..</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2024-07/6h48ht7o_sreeja-akula_625x300_12_July_24.jpeg" alt="news7">
+                <p>Akula As First pick Ahead Of UTT 2024.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2020-08/plp3h208_biden-kamala-harris_625x300_17_August_20.jpg" alt="news8">
+                <p>At a press conference in Washington, Joe Biden said, "From the very beginning, I made no bones about that. She is qualified to be the president. That's why I picked her.".</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://c.ndtvimg.com/2024-07/h32gdnio_israel-hamas-war-reuters_625x300_12_July_24.jpeg" alt="news9">
+                <p>Talks are underway in Qatar and Egypt on a deal, backed by Washington, that would allow a pause in the fighting in Gaza, now in its 10th month.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://i.gadgets360cdn.com/large/chatgpt5_reuters_1720781836190.jpg?downsize=950:*" alt="news10">
+                <p>OpenAI Reportedly Shares the Five Levels to Reach Superintelligent AI With Its Employees</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            Contact Us: theglobalgazette@gmail.com  | Phone: 123-456-7890
+        </div>
+    </footer>
+</body>
+</html>
